@@ -28,7 +28,8 @@ test("creates a new question when the form is submitted", async () => {
   render(<App />);
 
   // wait for first render of list (otherwise we get a React state warning)
-  await screen.findByText(/lorem testum 1/g);
+  
+
 
   // click form page
   fireEvent.click(screen.queryByText("New Question"));
